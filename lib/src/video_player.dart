@@ -74,7 +74,7 @@ class VideoPlayer {
   Future<void> initialize() async {
     _videoElement
       ..autoplay = false
-      ..controls = false
+      ..controls = true
       ..playsInline = true;
 
     if (await shouldUseHlsLibrary()) {
